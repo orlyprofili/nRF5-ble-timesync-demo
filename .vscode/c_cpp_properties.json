@@ -1,0 +1,39 @@
+{
+    "env": {
+        "nrfSDK": "${workspaceFolder}/nRF5_SDK_16.0.0_98a08e2",
+        "appFolder": "${nrfSDK}/examples/ble_peripheral/ble_app_uart/pca10056",
+        "makeFolder": "${appFolder}/s140/armgcc",
+        "sdkConfigFolder": "${appFolder}/s140/config"
+    },
+    "configurations": [
+        {
+            "name": "pca10056/s140/",
+            "includePath": [
+                "${appFolder}/**",
+                "${sdkConfigFolder}/**",
+                "${nrfSDK}/components/**",
+                "${nrfSDK}/modules/**",
+                "${nrfSDK}/integration/**",
+                "${nrfSDK}/components/libraries/bsp",
+                "${nrfSDK}/components/drivers_nrf/nrf_soc_nosd",
+                "${nrfSDK}/components/libraries/strerror",
+                "${nrfSDK}/components/boards",
+                "${nrfSDK}/components/toolchain/cmsis/include",
+                "${nrfSDK}/modules/nrfx",
+                "${nrfSDK}/components/libraries/util",
+                "${nrfSDK}/components/libraries/fifo",
+                "${nrfSDK}/components/libraries/uart",
+                "${nrfSDK}/integration/nrfx/legacy",
+                "${nrfSDK}/components/libraries/delay",
+                "${nrfSDK}/modules/nrfx/drivers/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-arm",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
